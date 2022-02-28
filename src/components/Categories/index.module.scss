@@ -8,7 +8,7 @@
     }
 
     .content {
-      @apply grid gap-y-10 relative z-[20];
+      @apply grid gap-y-10 relative z-[20px];
 
       .category {
         @apply w-[338px] rounded-[10px];
