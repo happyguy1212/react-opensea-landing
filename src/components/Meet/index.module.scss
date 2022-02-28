@@ -1,0 +1,43 @@
+/* --------------------------------- Default -------------------------------- */
+@media screen and (min-width: 0px) {
+  .container {
+    @apply w-full max-w-[100vw] flex flex-col items-center text-center p-[40px] mt-[150px] gap-[40px] bg-[rgb(243,251,254)];
+
+    .header {
+      @apply flex flex-col items-center gap-[20px];
+
+      .meet {
+        @apply text-[32px] font-bold;
+      }
+
+      .desc {
+        @apply text-[rgb(112,122,131)];
+      }
+    }
+
+    .vid {
+      @apply flex flex-col items-center gap-[20px] w-full;
+
+      .size {
+        @apply w-full px-[40px] flex justify-center;
+        aspect-ratio: 16 / 9;
+
+        iframe {
+          @apply w-full h-full;
+        }
+      }
+
+      .coming {
+        @apply text-[12px] text-[rgb(112,122,131)];
+      }
+    }
+
+    button {
+      @apply bg-[rgb(32,129,226)] rounded-[10px] px-[20px] py-[12px] hover:bg-[rgb(24,104,183)];
+
+      a {
+        @apply font-bold text-[white];
+      }
+    }
+  }
+}

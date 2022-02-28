@@ -1,0 +1,79 @@
+/* --------------------------------- Default -------------------------------- */
+@media screen and (min-width: 0px) {
+  .collection {
+    @apply mb-[60px] flex flex-col items-center;
+
+    .title {
+      @apply text-[24px] font-bold text-center mb-[40px];
+    }
+
+    .content {
+      @apply grid grid-cols-1 gap-x-[20px];
+
+      .container {
+        @apply flex items-center p-4 gap-4 justify-between cursor-pointer rounded-[10px] border-b border-[lightgrey];
+
+        &:hover {
+          box-shadow: rgba(4, 17, 29, 0.5) 0px 0px 8px 0px;
+        }
+
+        & > p {
+          @apply max-w-[9px];
+        }
+
+        .nft {
+          @apply flex gap-2;
+
+          .logo {
+            @apply w-[50px] h-[50px] rounded-full;
+          }
+
+          .eth {
+            @apply flex  items-center;
+          }
+        }
+
+        .price {
+          .priceETH {
+            @apply flex items-center justify-end;
+          }
+        }
+      }
+    }
+
+    .button {
+      @apply mt-[50px];
+
+      button {
+        @apply bg-[rgb(32,129,226)] text-[white] font-bold rounded-[10px] px-[25px] py-[10px];
+      }
+
+      &:hover {
+        button {
+          @apply bg-[rgb(24,104,183)];
+        }
+      }
+    }
+  }
+
+  .ethsym {
+    @apply w-[14px] h-[14px];
+  }
+
+  .green {
+    @apply text-[rgb(52,199,123)] text-right;
+  }
+
+  .red {
+    @apply text-[rgb(235,87,87)] text-right;
+  }
+}
+
+/* ----------------------------- Screen: 1200px ----------------------------- */
+@media screen and (min-width: 1200px) {
+  .collection {
+    .content {
+      @apply grid-cols-3;
+    }
+  }
+}

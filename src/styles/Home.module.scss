@@ -1,0 +1,10 @@
+/* --------------------------------- Default -------------------------------- */
+@media screen and (min-width: 0px) {
+  .container {
+    @apply flex flex-col items-center;
+
+    main {
+      @apply flex flex-col items-center overflow-hidden max-w-[100vw];
+    }
+  }
+}
